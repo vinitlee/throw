@@ -1,0 +1,102 @@
+*:focus,
+*:active {
+  outline: none;
+}
+
+body {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  
+  font-family: sans-serif;
+  font-size: 10pt;
+  color: #222;
+}
+
+.backdrop {
+  opacity:0;
+  width: 100vw;
+  height: 100vh;
+  background: pink;
+  border:none;
+  overflow:hidden;
+  position:absolute;
+  /*transition: 0.2s opacity;*/
+  z-index:-1;
+}
+#player {
+  position:relative;
+  left:-500vw;
+  height:100%;
+  width:1100vw;
+}
+
+.powerBar {
+  background-color: black;
+  background-size: 50000px;
+  background-position: center;
+  background-image: none;
+  transition: 0.5s background;
+  color: white;
+  padding: 14pt;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchBox {
+  flex:1
+}
+
+#dropLogo {
+  margin: 0 7pt 0 0;
+}
+
+input,
+.input {
+  display: block;
+  border-radius: 2pt;
+  border: none;
+  padding: 5pt;
+  background: white;
+}
+.input.clear {
+  display: block;
+  border-radius: 2pt;
+  border: none;
+  padding: 5pt;
+  background: transparent;
+  transition: 0.2s background;
+  color: white;
+}
+.input.clear:active,
+.input.clear:hover {
+  background: rgba(255,255,255,0.5); 
+}
+.input.clear:active {transition: 0.1s background;}
+.input.clear:focus {
+  color: #222;
+  background: rgba(255,255,255,1); 
+}
+
+.z-1 {
+  box-shadow: 0 02pt 10pt rgba(0,0,0,.12),
+              0 02pt 05pt rgba(0,0,0,.16);
+}
+.z-2 {
+  box-shadow: 0 06pt 20pt rgba(0,0,0,.19),
+              0 08pt 17pt rgba(0,0,0,.20);
+}
+.z-3 {
+  box-shadow: 0 17pt 50pt rgba(0,0,0,.19),
+              0 12pt 15pt rgba(0,0,0,.24);
+}
+.z-4 {
+  box-shadow: 0 25pt 55pt rgba(0,0,0,.21),
+              0 16pt 28pt rgba(0,0,0,.22);
+}
+.z-5 {
+  box-shadow: 0 40pt 77pt rgba(0,0,0,.22),
+              0 27pt 24pt rgba(0,0,0,.20);
+}
