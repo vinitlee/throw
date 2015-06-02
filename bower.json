@@ -1,0 +1,21 @@
+{
+  "name": "throw",
+  "version": "0.0.1",
+  "homepage": "https://github.com/vinitlee/throw",
+  "authors": [
+    "Vincent Lee <vinitlee@gmail.com>"
+  ],
+  "description": "Realtime communal playlisting using YouTube",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
